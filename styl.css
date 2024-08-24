@@ -1,0 +1,182 @@
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #f4f4f4;
+    }
+
+    .header {
+        background: linear-gradient(90deg, #004080, #0571b4);
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        letter-spacing: 2px;
+    }
+
+    .nav {
+        background-color: #004080;
+        padding: 10px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .nav ul li {
+        position: relative;
+    }
+
+    .nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav ul li a:hover {
+        background-color: #00509e;
+        border-radius: 5px;
+        color: #fff;
+    }
+
+    .nav ul li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #004080;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav ul li:hover ul {
+        display: block;
+        z-index: 10;
+    }
+
+    .nav ul li ul li {
+        width: 200px;
+    }
+
+    .nav ul li ul li a {
+        padding: 10px;
+        background-color: #00509e;
+        font-size: 1em;
+        border-radius: 0;
+    }
+
+    .nav ul li ul li a:hover {
+        background-color: #0066cc;
+    }
+
+    .section {
+        padding: 60px 20px;
+        text-align: center;
+        background-color: white;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #004080;
+    }
+
+    .section p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    .form-section {
+        padding: 60px 20px;
+        background-color: #f4f4f4;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-section h2 {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+        color: #004080;
+    }
+
+    .form-section form {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .form-section label {
+        font-size: 1.1em;
+        color: #333;
+    }
+
+    .form-section input,
+    .form-section textarea,
+    .form-section select {
+        padding: 10px;
+        font-size: 1em;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .form-section button {
+        padding: 10px 20px;
+        font-size: 1.2em;
+        background-color: #004080;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .form-section button:hover {
+        background-color: #00509e;
+    }
+
+    .footer {
+        background-color: #004080;
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer p {
+        margin: 5px 0;
+        font-size: 1em;
+    }
+
+    .footer a {
+        color: #57a4ff;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }

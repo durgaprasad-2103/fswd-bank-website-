@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank of New York Mellon</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .form-section {
+            padding: 60px 20px;
+            background-color: #f4f4f4;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form-section h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            color: #004080;
+            text-align: center;
+        }
+
+        .form-section form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .form-section label {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .form-section input,
+        .form-section select {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-section button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-section button:hover {
+            background-color: #00509e;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!-- Apply for a Loan Form -->
+    <section class="form-section">
+        <h2>Apply for a Loan</h2>
+        <form action="submit_loan.html" method="POST">
+            <label for="loan-type">Loan Type:</label>
+            <select id="loan-type" name="loan-type" required>
+                <option value="personal">Personal Loan</option>
+                <option value="home">Home Loan</option>
+                <option value="auto">Auto Loan</option>
+            </select>
+
+            <label for="amount">Loan Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="income">Annual Income:</label>
+            <input type="number" id="income" name="income" required>
+
+            <label for="employment-status">Employment Status:</label>
+            <select id="employment-status" name="employment-status" required>
+                <option value="employed">Employed</option>
+                <option value="self-employed">Self-employed</option>
+                <option value="unemployed">Unemployed</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</html>
+
+
